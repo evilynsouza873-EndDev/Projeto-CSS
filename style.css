@@ -1,16 +1,19 @@
-* {
-   @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
     margin: 0;
     padding: 0;
+    font-family: "Roboto",sans-serif;
 }
 body{
     background-color: #EEEEEE;
+    margin: 0 auto;
 }
+.hearder-container{
+max-width: 1200px;
+margin: 0 auto;
+display: flex;
+justify-content: space-between;
 
-.nav-bar {
-    padding: 0px;
-    display: flex;
-    justify-content: space-between;
 }
 
 .nav-container{
@@ -22,6 +25,7 @@ body{
     margin: 25px 40px 0 0;
     color: #0e333d;
     font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
 }
 
 .logo img {
@@ -33,99 +37,100 @@ body{
 
 /**fim da nav**/
 .bloco-casa-1 {
+   max-width: 1200px;
+   margin: 0 auto;
+   gap: 30px;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    align-items: center;
+    padding: 20px;
+  
 }
 
 .img-casa-1 img{
     width: 470px;
     height: 500px;
-    margin: 20px 170px 0 0;
+    margin: 20px 0px 0 0;
     border-radius: 25px;
 }
 
 .conteudo-casa-1 {
-    width: 450px;
-    margin: 150px 0 0 250px;
-    display: flex;
-    gap: 10px;
-    flex-direction: column;
+   padding: 40px 0; 
+    
+
+
 }
 
 .conteudo-casa-1 h1 {
-    font-size: 40px;
+    font-size: 50px;
     background:-webkit-linear-gradient(45deg, #0e333d, #195E70);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-weight: bold;
-    font-weight: 800;
+   font-weight: 800;
+   max-width: 60ch;
+    margin-bottom: 20px;
+    padding-left: 60px;
+   
     
 
 }
 
 .conteudo-casa-1 p {
-    font-size: 18px;
+    font-size: 21px;
+    padding-left: 80px;
+    
 }
-
-.botao-search {
- border: none;
-   color: transparent;
-    font-size: 16px;
-    font-weight: bold;
-    padding: 12px 20px;
-    cursor: pointer;
-    position: absolute; 
-    overflow: hidden; 
-    width: 400px;
-    border-radius: 20px; 
+.conteiner-botao{
     background: linear-gradient(to right, #6D7F82, #AAB8BB);
-    margin: 200px 45px 0 0px ; 
-    height: 35px;
+    max-width: 80%;
+    margin-top: 20px;
+    border-radius: 40px;
+    margin-left: 60px;
+    
+  
+    
 }
-
-
-.botao-search::before{
-    content: "Pesquisa";
-    display: flex;
-    color:#ffff;
-    align-items: center;
-    text-align: left;
-    padding-left: 25px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 35px;
-    width: 100px; 
-    background-color: #0E3544; 
-    border-top-right-radius: 130px; 
-    border-bottom-right-radius: 130px;
-    z-index: 0;
+.botao-search{
+    border:none;
+    width: 150px;
+    height: 50px;
+    background-color: #0e333d;
+    border-radius: 40px;
+    font-size: 18px;
+    color: #ffffff;
+    
+    
 }
-
-
-.botao.search span {
-    position: absolute;
-    z-index: 2;
-}
-
-
-
 
 /**fim do bloco 1**/
 
-.bloco-casa-2 {
-    margin: 30px 0 0 0;
-    display: flex;
-    justify-content: space-between;
+/* .bloco-casa-2 {
+    max-width: 1200px;
+    border: 2px solid #0e333d;
+   margin: 0 auto;
+  display: flex;
     flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-between; */
+
+.bloco-casa-2{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap:30px;
+   
 }
 
 .img-casa-2 img{
-    width: 500px;
-    margin: 0 0 0 200px;
+    width: 550px;
+    margin: 0 0 0 0px;
   border-radius: 50px;
 }
+
 .seta{
     width: 5px;
     text-align: center;
@@ -133,27 +138,20 @@ body{
     padding: 0px;
 
 }
-
-.conteudo-casa-2 {
-    width: 450px;
-    margin: 150px 160px 0 0;
-    display: flex;
-    gap: 10px;
-    flex-direction: column;
-}
-
 .conteudo-casa-2 h1 {
+   margin-bottom: 20px;
     font-size: 40px;
     background:-webkit-linear-gradient(45deg, #0e333d, #195E70);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-weight: bold;
     font-weight: 800;
   
 }
 
 .conteudo-casa-2 p {
-    font-size: 18px;
+    font-size: 20px;
+    margin-bottom: 20px;
+
 }
 
 .botao-read {
@@ -174,56 +172,64 @@ body{
 /**final do bloco 2**/
 
 .artigo-container{
-    display: grid;
-    grid-template-columns: 1fr;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    margin-top: 60px;
 }
 .artigo1, .artigo2{
-    display: flex;
-    margin: 20px 0 0 200px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    margin-bottom: 30px;
 }
 .artigo-h1{
     font-size: 40px;
-    margin: 80px 0 0 200px;
-    background:-webkit-linear-gradient(45deg, #0e333d, #195E70);
+     background:-webkit-linear-gradient(45deg, #0e333d, #195E70);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-weight: bold;
     font-weight: 900;
     
 }
 .artigo-conteudo{
-    width: 1050px;
     margin: 20px 0 0 0;
     display: flex;
     flex-direction: column;
+
 }
 .artigo-img-1 img, .artigo-img-2 img{
-    width: 250px;
+    /* width: 250px;
     height: 160px;
-    border-radius: 20px;
+    border-radius: 20px; */
+    max-width: 100%;
+    border-radius: 40px;
 }
 
 .artigo-conteudo h2{
-    font-size: 32px;
-    margin: 5px 0 0 20px;
+    font-size: 35px;
+    margin: 0 0 0 20px;
     background:-webkit-linear-gradient(45deg, #0e333d, #195E70);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bold;
     font-weight: 800;
+    margin-bottom: 20px;
   
    
 }
 .artigo-conteudo p{
     font-size: 16px;
     margin: 7px 0 0 20px;
+    line-height: 1.3;
    
 }
 /*final do artigo do blog*/
 .subscribe{
-    margin: 100px 0 0 0;
+    /* margin: 100px 0 0 0;
     display: grid;
-    justify-content: center;
+    justify-content: center; */
+    max-width: 1200px;
+    margin: 0 auto;
 }
 .subscribe-conteudo{
     background-color: #0e333d;
@@ -255,18 +261,22 @@ body{
 }
 /** final do inscreva-se **/
 .footer-container{
-    padding: 0 0 10px 0;
-    margin: 70px 0 0 0;
+     padding: 0 0 10px 0;
+    margin: 70px 0 0 0; 
     background-color: #0e333d;
 }
 .footer-links{
     display: flex;
     justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    border-bottom: 1px solid #ffffff;
 }
 
 .footer-parte-esquerda{
     display: flex;
-    margin: 40px 0 0 120px;
+  
     flex-direction: column;
 }
 .footer-parte-esquerda img{
@@ -279,8 +289,7 @@ body{
     margin: 10px 0 0 0;
 }
 .footer-parte-direita{
-    margin: 40px 120px 0 0;
-    gap: 40px;
+   gap: 40px;
     display: flex;
     flex-direction: row;
     
@@ -315,6 +324,3 @@ body{
     color: #ffffff;
     font-size: 12px;
 }
-
-
-    
