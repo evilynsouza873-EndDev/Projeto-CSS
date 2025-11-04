@@ -10,18 +10,20 @@
 
 <body>
 
-    <nav class="nav-bar">
+    <header class="nav-bar">
+        <div class="hearder-container">
         <div class="logo">
             <img src="saphire-main/logoColorida.svg" alt="Logotipo">
         </div>
-        <div class="nav-container">
-            <p>Home</p>
-            <p>Sobre</p>
-            <p>Contato</p>
-            <p>Projeto</p>
-            <p>Blog</p>
+        <nav class="nav-container">
+            <a>Home</a>
+            <a>Sobre</a>
+            <a>Contato</a>
+            <a>Projeto</a>
+            <a>Blog</a>
+        </nav>
         </div>
-    </nav>
+    </header>
     <!-- final nav -->
     <div class="bloco-casa-1">
         <div class="conteudo-casa-1">
@@ -30,7 +32,9 @@
             <p>Há mais de 15 anos transformando sonhos em realidade!
                 Encontre o lar dos seus sonhos com quem entende suas
                 necessidades.</p>
-            <button class="botao-search">Pesquisa</button>
+            <div class="conteiner-botao">
+                <button class="botao-search">Pesquisa</button>
+            </div>
         </div>
         <div class="img-casa-1">
             <img src="saphire-main/casa1.jpg" alt="Imagem casa 1">
@@ -47,14 +51,14 @@
             <p>Há mais de 15 anos transformando sonhos em realidade!
                 Encontre o lar dos seus sonhos com quem entende suas
                 necessidades.</p>
-            <button class="botao-read">Ler Mais</button>
+            <button class="botao-read">Ler Mais <i class="fa-solid fa-arrow-right"></i></button>
         </div>
     </div>
-    </div>
+  
     <!-- final bloco 2 -->
-    <h1 class="artigo-h1">Artigos do Blog</h1>
+ <div class=" artigo-container">
+          <h1 class="artigo-h1">Artigos do Blog</h1>
 
-    <div class=" artigo-container">
         <div class="artigo-conteudo">
             <div class="artigo1">
                 <div class=" artigo-img-1">
@@ -138,13 +142,11 @@
             </div>
         </div>
         <div class="parte-baixo">
-            <div class="footer-line">
-            </div>
             <p class="footer-direitos">@Saphire 2025. Todos os direitos reservados.</p>
         </div>
     </footer>
 
-
+<script src="https://kit.fontawesome.com/862ad73f5c.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
