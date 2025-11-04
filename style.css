@@ -104,17 +104,6 @@ justify-content: space-between;
 }
 
 /**fim do bloco 1**/
-
-/* .bloco-casa-2 {
-    max-width: 1200px;
-    border: 2px solid #0e333d;
-   margin: 0 auto;
-  display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 20px;
-    justify-content: space-between; */
-
 .bloco-casa-2{
     max-width: 1200px;
     margin: 0 auto;
@@ -225,10 +214,7 @@ justify-content: space-between;
 }
 /*final do artigo do blog*/
 .subscribe{
-    /* margin: 100px 0 0 0;
-    display: grid;
-    justify-content: center; */
-    max-width: 1200px;
+  max-width: 1200px;
     margin: 0 auto;
 }
 .subscribe-conteudo{
